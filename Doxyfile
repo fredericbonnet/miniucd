@@ -1,0 +1,64 @@
+# Doxyfile 1.8.6
+
+DOXYFILE_ENCODING      = UTF-8
+
+PROJECT_NAME           = MiniUCD
+PROJECT_NUMBER         =
+PROJECT_BRIEF          = "TODO"
+PROJECT_LOGO           =
+
+GENERATE_HTML          = YES
+GENERATE_XML           = YES
+GENERATE_LATEX         = NO
+OUTPUT_DIRECTORY       = docs
+WARN_IF_DOC_ERROR      = NO
+
+INPUT                  = README.md \
+                         ./include
+EXTENSION_MAPPING      = inc=C
+
+USE_MDFILE_AS_MAINPAGE = README.md
+INPUT_ENCODING         = UTF-8
+
+HIDE_UNDOC_MEMBERS     = YES
+SUBGROUPING            = NO
+SORT_MEMBER_DOCS       = NO
+ALWAYS_DETAILED_SEC    = YES
+INLINE_SIMPLE_STRUCTS  = YES
+JAVADOC_AUTOBRIEF      = YES
+
+OPTIMIZE_OUTPUT_FOR_C  = YES
+TYPEDEF_HIDES_STRUCT   = YES
+MAX_INITIALIZER_LINES  = 0
+PREDEFINED             += DOXYGEN MINIUCD_IMPLEMENTATION
+SKIP_FUNCTION_MACROS   = NO
+IGNORE_PREFIX          = MINIUCD_ \
+                         MiniUCD_ \
+                         miniucd
+
+ALIASES                += beginprivate="@privatesection"
+ALIASES                += endprivate="@publicsection"
+
+# This tag implements a quasi-intelligent brief description abbreviator that is
+# used to form the text in various listings. Each string in this list, if found
+# as the leading text of the brief description, will be stripped from the text
+# and the result, after processing the whole list, is used as the annotated
+# text. Otherwise, the brief description is used as-is. If left blank, the
+# following values are used ($name is automatically replaced with the name of
+# the entity):The $name class, The $name widget, The $name file, is, provides,
+# specifies, contains, represents, a, an and the.
+
+ABBREVIATE_BRIEF       = "The $name class" \
+                         "The $name widget" \
+                         "The $name file" \
+                         "This file" \
+                         "This header file" \
+                         is \
+                         provides \
+                         specifies \
+                         contains \
+                         represents \
+                         defines \
+                         a \
+                         an \
+                         the

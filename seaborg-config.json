@@ -1,0 +1,4 @@
+{
+  "ignorePrefix": "MINIUCD_|miniucd|MiniUCD_",
+  "excludeProtectionLevels": ["private"]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "miniucd",
+  "type": "module",
+  "scripts": {
+    "fetch": "cd tools && node ./ucdFetch.js",
+    "parse": "cd tools && node ./ucdParse.js",
+    "generate": "cd tools && node ./ucdGenerate.js",
+    "docs": "npm-run-all --serial docs:*",
+    "docs:doxygen": "doxygen",
+    "docs:seaborg": "seaborg -c seaborg-config.json docs/xml docs/reference",
+    "docs:copy": "copyfiles README.md docs"
+  },
+  "devDependencies": {
+    "@seaborg/cli": "^0.6.0",
+    "adm-zip": "^0.5.16",
+    "copyfiles": "^2.4.0",
+    "ejs": "^3.1.10",
+    "fast-xml-parser": "^4.0.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
