@@ -12,10 +12,10 @@
 #define _MINIUCD
 
 #ifndef MiniUCD_Char
-#  define MiniUCD_Char uint32_t
+#   define MiniUCD_Char uint32_t
 #endif
 #ifndef MINIUCD_DEF
-#  define MINIUCD_DEF
+#   define MINIUCD_DEF
 #endif
 
 

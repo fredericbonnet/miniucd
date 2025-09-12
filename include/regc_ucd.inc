@@ -3,10 +3,10 @@
  *
  * This file implements Unicode regexp symbol and class support for Henry
  * Spencer's regexp library. Simply include it in regc_locale.c.
-  * 
+ * 
  * It is automatically generated from the UCD source files using the script
  * `ucdGenerate.js`; Do not modify.
-*/
+ */
 
 /*
 ===========================================================================*//*!
