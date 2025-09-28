@@ -11,7 +11,7 @@ include(FetchContent)
 FetchContent_Populate(
     picotest
     GIT_REPOSITORY https://github.com/fredericbonnet/picotest.git
-    GIT_TAG v1.4.3
+    GIT_TAG v1.5.0
 )
 set(PicoTest_DIR ${picotest_SOURCE_DIR})
 find_package(PicoTest REQUIRED)
@@ -20,8 +20,6 @@ add_executable(test_miniucd)
 target_sources(test_miniucd
     PRIVATE
         main.c
-        traverse.c
-        hooks.c
         testUcdPropertyAccessors.c
 )
 target_link_libraries(test_miniucd
